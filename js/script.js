@@ -57,4 +57,4 @@ buttonNext.addEventListener('click', () => {
   renderPokemon(searchPokemon);
 });
 
-renderPokemon(39);
+renderPokemon(Math.round(Math.random()*100));
