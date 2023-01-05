@@ -7,8 +7,46 @@ const input = document.querySelector('.input__search');
 const buttonPrev = document.querySelector('.btn-prev');
 const buttonNext = document.querySelector('.btn-next');
 
+let searchPokemon = "";
 
-let searchPokemon = 3;
+var val1 = Math.floor(Math.random()*10);
+console.log("Hola "+val1);
+
+if (val1 == 1) {
+  searchPokemon = 282;
+}else{
+  if (val1 == 2 ) {
+    searchPokemon = 468;
+  }else{
+    if (val1 == 3 ) {
+      searchPokemon = 3;
+    }
+    else{
+      if (val1 == 4 ) {
+        searchPokemon = 445;
+      }else{
+        if (val1 == 5 ) {
+          searchPokemon = 25;
+        }else{
+          if (val1 == 6) {
+            searchPokemon = 282;
+          }else{
+            if(val1 == 7){
+              searchPokemon = 468;
+            }else{
+              if(val1 == 8){
+                searchPokemon = 445;
+              }else{
+                searchPokemon = 3;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 
 
 const fetchPokemon = async (pokemon) => {
